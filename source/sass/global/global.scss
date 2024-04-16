@@ -51,22 +51,29 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 250px;
-  padding: 10px;
-  color: $basic-white;
-  background-color: $main-color;
-  font-family: "Arial", sans-serif;
+  min-width: 270px;
+  padding: 18px;
+  color: $main-color;
+  background-color: $basic-white;
+  font-family:"Philosopher", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  border-radius: 10px;
+  font-size: 22px;
+  border-radius: 9px;
   border: none;
-
-  &:hover {
-    background-color: $btn-hover;
-  }
+  text-transform: uppercase;
 
   &:active {
     opacity: 0.8;
+  }
+
+  &:disabled {
+    background: #a4a4a4;
+    color: #646464;
+    cursor: not-allowed;
+
+    &:active {
+      opacity: 1;
+    }
   }
 }
 
@@ -82,16 +89,14 @@ button {
 
 .heading {
   margin-bottom: 30px;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 48px;
+  font-family:"Philosopher", "Arial", sans-serif;
+  font-size: 32px;
   font-weight: 400;
 
-  &--small {
-    margin-bottom: 25px;
-    font-size: 36px;
-  }
 
   @media (max-width: $tablet-width) {
-    font-size: 24px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    text-align: left !important;
   }
 }

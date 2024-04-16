@@ -1,0 +1,10 @@
+.header-promo {
+  display: flex;
+  background: $bcg-header no-repeat 100% 100% url("../img/bcg/promo.webp");
+  background-size: contain;
+
+  @media (max-width: $tablet-width) {
+    background: unset;
+  }
+
+}

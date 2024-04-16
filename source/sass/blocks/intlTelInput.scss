@@ -707,7 +707,7 @@
     bottom: 1px;
     display: flex;
     align-items: center;
-    height: 45px;
+    height: 40px;
     padding: 0 6px 0 8px;
 }
 .iti__arrow {
@@ -781,9 +781,9 @@
     margin-right: 6px;
 }
 input[type="tel"] {
-    margin-left: 100px !important;
+    margin-left: 80px !important;
     padding-left: 10px !important;
-    width: calc(100% - 100px);
+    width: calc(100% - 80px);
 }
 .iti--allow-dropdown input,
 .iti--allow-dropdown input[type="tel"],
@@ -812,14 +812,19 @@ input[type="tel"] {
     background-color: transparent;
 }
 .iti--separate-dial-code .iti__selected-flag {
-    max-height: 45px;
-    padding: 22px 10px;
     font-size: 15px;
     font-weight: 400;
-    color: #757575;
-    border-radius: 4px;
-    border: 1px solid #e8e9e9;
-    background-color: white;
+    color: $basic-white;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid $basic-white;
+    border-right: unset;
+
+    &::after {
+      content: '|';
+      margin-bottom: 6px;
+      margin-left: 5px;
+      font-size: 25px;
+    }
 }
 .iti--separate-dial-code .iti__selected-dial-code {
     margin-left: 6px;
