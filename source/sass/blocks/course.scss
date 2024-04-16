@@ -2,15 +2,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
-  padding-top: 150px;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding: 150px 100px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 50px;
-    padding-top: 37px;
-    padding-right:4px;
-    padding-left: 4px;
+    padding: 30px 4px;
   }
 }
 
@@ -27,6 +23,7 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    margin-bottom: 50px;
     padding: 0 10px;
     background: 0;
   }
@@ -49,5 +46,61 @@
 
   @media (max-width: $tablet-width) {
     font-size: 16px;
+  }
+}
+
+.course__bottom {
+  display: flex;
+
+  & > * {
+    padding-top: 40px;
+    width: 50%;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+
+    & > * {
+      padding-top: 0;
+      width: 100%;
+    }
+  }
+}
+
+.course__content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-right: 70px;
+  padding-left: 30px;
+  border-left: 1px solid $basic-black;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 10px;
+    border-left: 0;
+  }
+
+  span {
+    margin-bottom: 15px;
+    font-family: "Philosopher", "Arial", sans-serif;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 30px;
+    padding-right: 115px;
+
+    @media (max-width: $tablet-width) {
+      padding-right: 20px;
+    }
+  }
+}
+
+.course__img {
+  border-radius: 20px;
+  object-fit: cover;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
   }
 }
