@@ -52,6 +52,7 @@ button {
   align-items: center;
   justify-content: center;
   min-width: 270px;
+  width: fit-content;
   padding: 18px;
   color: $main-color;
   background-color: $basic-white;
@@ -61,6 +62,11 @@ button {
   border-radius: 9px;
   border: none;
   text-transform: uppercase;
+
+  &--reverse-color {
+    background: $main-color;
+    color: $basic-white
+  }
 
   &:active {
     opacity: 0.8;

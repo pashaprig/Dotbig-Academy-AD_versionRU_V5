@@ -1,11 +1,9 @@
 .course {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
   padding: 150px 100px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
     padding: 30px 4px;
   }
 }
@@ -99,6 +97,7 @@
 .course__img {
   border-radius: 20px;
   object-fit: cover;
+  max-width: 100%;
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
