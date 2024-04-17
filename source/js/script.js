@@ -7,6 +7,7 @@ class App {
     this.afterVideoPlay();
     this.onButtonPlay();
     this.isPolicyChecked();
+    this.hideText();
   }
 
   constructor() {
@@ -60,7 +61,7 @@ class App {
     $(function () {
       $('.slider').slick({
         arrows: false,
-        slidesToShow: 3,
+        slidesToShow: 4,
         responsive: [
           {
             breakpoint: 1024,
@@ -72,6 +73,8 @@ class App {
           {
             breakpoint: 480,
             settings: {
+              centerMode: true,
+              centerPadding: '20px',
               slidesToShow: 1,
               dots: true,
             }
@@ -124,6 +127,28 @@ class App {
     }
 
     [leadform1, leadform2].forEach((f) => { f.addEventListener('click', isChecked(f)) })
+  }
+
+  hideText() {
+    const cards = document.querySelectorAll(".program__card")
+
+    const togleText = (card) => {
+      const toggleButton = card.querySelector("#toggleButton")
+      const hiddenText = card.querySelector(".hiddenText");
+
+      toggleButton.addEventListener("click", function () {
+        if (hiddenText.classList.contains("hidden")) {
+          toggleButton.classList.remove("hidden");
+          hiddenText.classList.remove("hidden");
+          hiddenText.style.maxHeight = hiddenText.scrollHeight + "px";
+        } else {
+          toggleButton.classList.add("hidden");
+          hiddenText.style.maxHeight = null;
+          hiddenText.classList.add("hidden");
+        }
+      });
+    }
+    cards.forEach((c) => { c.addEventListener('click', togleText(c)) })
   }
 }
 

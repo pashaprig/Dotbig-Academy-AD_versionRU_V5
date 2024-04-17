@@ -202,128 +202,208 @@
 
     <section class="gallery" id="gallery">
       <div class="gallery__wrapper">
-      <div class="gallery-item gallery-item--first-row">
-        <picture>
-          <source type="image/webp" srcset="img/img/gallery-1-1.webp">
-          <img width="532" height="334" class="gallery__img" src="img/img/gallery-1-1.png" alt="Дискуссия">
-        </picture>
-      </div>
-      <div class="gallery-item gallery-item--first-row">
-        <picture>
-          <source type="image/webp" srcset="img/img/gallery-1-2.webp">
-          <img width="532" height="334" class="gallery__img" src="img/img/gallery-1-2.png" alt="Лекция">
-        </picture>
-      </div>
+        <div class="gallery-item gallery-item--first-row">
+          <picture>
+            <source type="image/webp" srcset="img/img/gallery-1-1.webp">
+            <img width="532" height="334" class="gallery__img" src="img/img/gallery-1-1.png" alt="Дискуссия">
+          </picture>
+        </div>
+        <div class="gallery-item gallery-item--first-row">
+          <picture>
+            <source type="image/webp" srcset="img/img/gallery-1-2.webp">
+            <img width="532" height="334" class="gallery__img" src="img/img/gallery-1-2.png" alt="Лекция">
+          </picture>
+        </div>
 
-      <div class="gallery-item gallery-item--second-row">
-        <picture>
-          <source type="image/webp" srcset="img/img/gallery-2-1.webp">
-          <img width="343" height="215" class="gallery__img" src="img/img/gallery-2-1.png" alt="Спикет на сцене">
-        </picture>
+        <div class="gallery-item gallery-item--second-row">
+          <picture>
+            <source type="image/webp" srcset="img/img/gallery-2-1.webp">
+            <img width="343" height="215" class="gallery__img" src="img/img/gallery-2-1.png" alt="Спикет на сцене">
+          </picture>
+        </div>
+        <div class="gallery-item gallery-item--second-row">
+          <picture>
+            <source type="image/webp" srcset="img/img/gallery-2-2.webp">
+            <img width="343" height="215" class="gallery__img" src="img/img/gallery-2-2.png" alt="Конференция">
+          </picture>
+        </div>
+        <div class="gallery-item gallery-item--second-row">
+          <picture>
+            <source type="image/webp" srcset="img/img/gallery-2-3.webp">
+            <img width="343" height="215" class="gallery__img" src="img/img/gallery-2-3.png" alt="Перед аудиторией">
+          </picture>
+        </div>
       </div>
-      <div class="gallery-item gallery-item--second-row">
-        <picture>
-          <source type="image/webp" srcset="img/img/gallery-2-2.webp">
-          <img width="343" height="215" class="gallery__img" src="img/img/gallery-2-2.png" alt="Конференция">
-        </picture>
-      </div>
-      <div class="gallery-item gallery-item--second-row">
-        <picture>
-          <source type="image/webp" srcset="img/img/gallery-2-3.webp">
-          <img width="343" height="215" class="gallery__img" src="img/img/gallery-2-3.png" alt="Перед аудиторией">
-        </picture>
-      </div>
-    </div>
       <a class="btn btn--reverse-color" href="#leadform1">Записаться на курс</a>
     </section>
 
-    <section class="review container" id="review">
-      <h2 class="review__heading heading">Отзывы наших клиентов</h2>
-      <p class="review__about">Halyk банк задуман как финансовый актив и нативный расчетный инструмент в блокчейн сети
-        Сбербанка - крупнейшего банка Казахстана. По итогам 2019 года у «Halyk course» 96,2 млн активных частных
-        клиентов
-        и 2,6 млн активных корпоративных клиентов, именно в этом году было принято запустить свою криптовалюту.</p>
+    <section class="program" id="program">
+      <div class="program__heading-wrapper">
+        <h2 class="program__heading heading">Программа курса</h2>
+        <p class="program__about">
+          <span>Продолжительность программы 4 дня.</span>
+          <span>Научите деньги работать на Вас.</span>
+        </p>
+      </div>
       <div class="slider">
-        <div class="review__card slider__item">
-          <div class="review__avatae-wrapper">
-            <picture>
-              <source type="image/webp" srcset="img/avatars/latif.webp">
-              <img width="60" height="60" class="review__img" src="img/avatars/latif.jpg" alt="Пірәліұлы Латиф">
-            </picture>
-            <div class="review__name-wrapper">
-              <cite>Пірәліұлы Латиф</cite>
-              <span class="review__nik">@Butterbean</span>
-            </div>
+        <div class="program__card slider__item">
+          <picture>
+            <source type="image/webp" srcset="img/img/1.webp">
+            <img width="140" height="197" class="program__img" src="img/img/1.png" alt="1">
+          </picture>
+          <p class="program__text">Знакомство с брокером Dotbig. Открытие счета.Что такое инвестиции и как они влияют на
+            Ваши финансы</p>
+          <button class="hidden" id="toggleButton">
+            <svg width="17" height="17">
+              <use xlink:href="img/sprite.svg#more"></use>
+            </svg>
+          </button>
+          <div class="hiddenText hidden">
+            <ul class="program__list">
+              <li class="program__item">Как создать капитал, который будет работать на Вас и приносить дополнительную
+                прибыль</li>
+              <li class="program__item">Три уровня Вашей финансовой свободы</li>
+              <li class="program__item">Как без кредитов накопить на машину или квартиру в 2 раза быстрее</li>
+              <li class="program__item">Что выгоднее: брать ипотеку или вложить в инвестиции</li>
+            </ul>
+            <p class="program__info">Результат:<br>Вы поймете, сколько средств Вам нужно и как начать инвестировать уже
+              сегодня</p>
           </div>
-          <blockquote class="review__blockquote">Проект помог мне выбраться из финансовой ямы во время карантина
-            и действительно изменил мою жизнь!</blockquote>
-          <p class="review__time">23:02| Май 23,2023</p>
         </div>
 
-        <div class="review__card slider__item">
-          <div class="review__avatae-wrapper">
-            <picture>
-              <source type="image/webp" srcset="img/avatars/ismetuly.webp">
-              <img width="60" height="60" class="review__img" src="img/avatars/ismetuly.jpg" alt="Ісметұлы Латиф">
-            </picture>
-            <div class="review__name-wrapper">
-              <cite>Ісметұлы Латиф</cite>
-              <span class="review__nik">@Gamethe</span>
-            </div>
+        <div class="program__card slider__item">
+          <picture>
+            <source type="image/webp" srcset="img/img/2.webp">
+            <img width="140" height="197" class="program__img" src="img/img/2.png" alt="2">
+          </picture>
+          <p class="program__text">Как стать миллионером</p>
+          <button class="hidden" id="toggleButton">
+            <svg width="17" height="17">
+              <use xlink:href="img/sprite.svg#more"></use>
+            </svg>
+          </button>
+          <div class="hiddenText hidden">
+            <ul class="program__list">
+              <li class="program__item">Магия сложного процента: как финансы делают финансы</li>
+              <li class="program__item">Куда и как инвестировать, чтобы сохранить и преумножить Ваши средства</li>
+              <li class="program__item">Обзор инвестиционных инструментов и стратегий</li>
+              <li class="program__item">Как Вам купить вашу первую "плюсовую" акцию</li>
+            </ul>
+            <p class="program__info">Результат:<br>Вы познакомитесь с инструментами и стратегиями инвестирования,
+              получите инструкцию покупки первой акции</p>
           </div>
-          <blockquote class="review__blockquote">Решил попробовать себя в роли инвестора на проекте. Не имея опыта, я
-            сразу влился в процесс и начал зарабатывать 500 евро </blockquote>
-          <p class="review__time">13:33| Февраль 12,2023</p>
         </div>
 
-        <div class="review__card slider__item">
-          <div class="review__avatae-wrapper">
-            <picture>
-              <source type="image/webp" srcset="img/avatars/damen.webp">
-              <img width="60" height="60" class="review__img" src="img/avatars/damen.jpg" alt="Ошақбайұлы Дәмен">
-            </picture>
-            <div class="review__name-wrapper">
-              <cite>Ошақбайұлы Дәмен</cite>
-              <span class="review__nik">@Ckyliу453</span>
-            </div>
+        <div class="program__card slider__item">
+          <picture>
+            <source type="image/webp" srcset="img/img/3.webp">
+            <img width="140" height="197" class="program__img" src="img/img/3.png" alt="3">
+          </picture>
+          <p class="program__text">6 шагов к доходу от инвестиций</p>
+          <button class="hidden" id="toggleButton">
+            <svg width="17" height="17">
+              <use xlink:href="img/sprite.svg#more"></use>
+            </svg>
+          </button>
+          <div class="hiddenText hidden">
+            <ul class="program__list">
+              <li class="program__item">Как за 3 месяца составить стратегию формирования капитала, который позволит Вам
+                получать дополнительную выгоду</li>
+              <li class="program__item">Что такое фундаментальный анализ рынка</li>
+              <li class="program__item">Как стать частью сообщества практикующих инвесторов</li>
+              <li class="program__item">Стратегии инвестиций для молодежи, людей среднего возраста и пенсионеров</li>
+              <li class="program__item">Обзор инвестиционных инструментов и стратегий с потенциальной доходностью до
+                300% годовых</li>
+            </ul>
+            <p class="program__info">Результат:<br>Вы поймете, как сформировать свою собственную стратегию
+              инвестирования с потенциальной доходностью до 300% годовых</p>
           </div>
-          <blockquote class="review__blockquote">Проект — реальная возможность обеспечить себе достойную жизнь.Очень
-            удобно и легко — всем советую.</blockquote>
-          <p class="review__time">18:37| Март 1,2023</p>
+        </div>
+
+        <div class="program__card slider__item">
+          <picture>
+            <source type="image/webp" srcset="img/img/4.webp">
+            <img width="140" height="197" class="program__img" src="img/img/4.png" alt="4">
+          </picture>
+          <p class="program__text">10 ошибок новичков, которые помешают Вам получать проценты на инвестициях</p>
+          <button class="hidden" id="toggleButton">
+            <svg width="17" height="17">
+              <use xlink:href="img/sprite.svg#more"></use>
+            </svg>
+          </button>
+          <div class="hiddenText hidden">
+            <ul class="program__list">
+              <li class="program__item">Как не потерять деньги на инвестициях</li>
+              <li class="program__item">Что такое консервативная, умеренная и агрессивная стратегии. Какая из них
+                подойдет именно Вам</li>
+              <li class="program__item">Что такое психология инвестора и симптомы трейдера</li>
+              <li class="program__item">Ваш личный финансовый план: как создать капитал, который позволит никогда больше
+                не работать за оклад</li>
+              <li class="program__item">Как Вам начать получать «дивидендную зарплату»</li>
+            </ul>
+            <p class="program__info">Результат:<br>Вы подберете собственную стратегию инвестирования и поймете, как
+              сохранить и приумножить свой капитал</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="come-on container">
-      <h2 class="come-on__heading heading">Получай дивиденды от 150 000 ₸ в неделю</h2>
-      <p class="come-on__about">Стань одним из первых инвесторов, приобретающих акции самого крупного банка в
-        Казахстане.</p>
-      <form action="#" class="form form--bottom" method="POST" id="leadform2">
-        <input type="text" name="firstname" id="name2" placeholder="Имя">
-        <input type="text" name="lastname" id="lastName2" placeholder="Фамилия">
-        <input type="email" name="email" id="email2" placeholder="Эл. адрес">
-        <input type="tel" name="phone2" placeholder="" id="phone2" />
-        <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="" />
-        <input type="hidden" name="currency" value="usd">
-        <input id="country2" type="hidden" name="country" value="ru">
-        <input type="hidden" name="comment" class="comment" value="">
-        <input type="hidden" name="campaign_name" value="">
-        <button class="btn submit_btn" type="submit">
-          <span>Отправить заявку</span>
-        </button>
-        <label class="form__checkbox-label">
-          <input class="checkbox" type="checkbox" name="polycy" id="" checked="checked">
-          <a href="?page=conditions">Согласен(а) с <span>пользовательским соглашением</span></a>
-        </label>
-        <label class="form__checkbox-label">
-          <input class="checkbox" type="checkbox" name="terms" id="" checked="checked">
-          <a href="?page=terms">Я согласен с политикой конфиденциальности</a>
-        </label>
-        <div class="form_message error inactive"
-          style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
+
+    <section class="promo promo--bottom">
+      <div class="promo__wrapper promo__wrapper--video">
+        <h1 class="promo__heading heading">Бесплатный курс «Первые деньги на инвестициях!»</h1>
+        <div class="promo__video">
+          <button type="button" id="button-play">
+            <svg width="17" height="17">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
+          <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe
+              src="https://player.vimeo.com/video/741131489?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&loop=1"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Yandex_land">
+            </iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
-      </form>
+        <svg class="promo__icon" width="21" height="21">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+        <p class="promo__star">* Все финансовые результаты индивидуальны и не могут быть
+          гарантированы.</p>
+      </div>
+      <div class="promo__wrapper promo__wrapper--form">
+        <h2 class="promo__sub-heading">БОНУС после&nbsp;регистрации</h2>
+        <p class="promo__about">Запись беседы китов NASDAQ о типичных ошибках финансового мышления</p>
+        <form action="#" class="form form--bottom" method="POST" id="leadform2">
+          <input type="text" name="firstname" id="name2" placeholder="Имя">
+          <input type="text" name="lastname" id="lastName2" placeholder="Фамилия">
+          <input type="email" name="email" id="email2" placeholder="Эл. адрес">
+          <input type="tel" name="phone2" placeholder="" id="phone2" />
+          <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="" />
+          <input type="hidden" name="currency" value="usd">
+          <input id="country2" type="hidden" name="country" value="ru">
+          <input type="hidden" name="comment" class="comment" value="">
+          <input type="hidden" name="campaign_name" value="">
+          <button class="btn submit_btn" type="submit">
+            <span>Отправить заявку</span>
+          </button>
+          <label class="form__checkbox-label">
+            <input class="checkbox" type="checkbox" name="polycy" id="" checked="checked">
+            <a href="?page=conditions">Согласен(а) с <span>пользовательским соглашением</span></a>
+          </label>
+          <label class="form__checkbox-label">
+            <input class="checkbox" type="checkbox" name="terms" id="" checked="checked">
+            <a href="?page=terms">Я согласен с политикой конфиденциальности</a>
+          </label>
+          <div class="form_message error inactive"
+            style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
+          </div>
+        </form>
+      </div>
     </section>
+
   </main>
 
   <footer class="page-footer container">
@@ -343,7 +423,7 @@
         <li class="main-nav__item"><a href="#about-course">Halyk course</a></li>
         <li class="main-nav__item"><a href="#license">Лицензия</a></li>
         <li class="main-nav__item"><a href="#start">Инвестирование</a></li>
-        <li class="main-nav__item"><a href="#review">Отзывы</a></li>
+        <li class="main-nav__item"><a href="#program">Отзывы</a></li>
       </ul>
     </nav>
   </footer>
