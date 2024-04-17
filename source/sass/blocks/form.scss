@@ -7,6 +7,10 @@
   color: $basic-white;
   font-family: "Montserrat", "Arial", sans-serif;
 
+  .btn:hover {
+    color: $bcg-speakers;
+  }
+
   &--bottom {
     .btn {
       max-width: 242px;
@@ -79,10 +83,11 @@ label.error {
   align-items: center;
   gap: 8px;
   accent-color: $basic-white;
+  font-family: "Piedra", "Arial", sans-serif;
+  font-size: 12px;
 
-  &>a {
+  a {
     color: $basic-white;
-    font-family: "Piedra", "Arial", sans-serif;
-    font-size: 12px;
+    text-decoration: underline;
   }
 }

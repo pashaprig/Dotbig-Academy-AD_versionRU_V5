@@ -1,33 +1,66 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
-  gap: 200px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  color: $basic-black;
+  gap: 160px;
+  padding: 40px 100px;
+  background: $bcg-speakers;
+  border-top: 2px solid $basic-white;
 
-  .main-nav__list {
-    flex-wrap: wrap;
-    row-gap: 20px;
-    margin-bottom: 42px;
+  .main-nav {
+    margin-left: 0;
+    margin-bottom: 40px;
+    padding-left: 0;
+    opacity: 0.5;
   }
 
-  .main-nav__item {
-    width: 29%;
+  .btn {
+    padding: 20px 135px;
+    font-family: "Philosopher", "Arial", sans-serif;
+    color: $basic-white;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid $basic-white;
+    border-radius: unset;
+  }
+
+  p {
+    max-width: 225px;
+    margin-bottom: 30px;
+    color: $basic-white
   }
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-    gap: 15px;
-    padding-bottom: 15px;
+    gap: 30px;
+    padding: 30px 4px;
+
+    .main-nav {
+      position: relative;
+      display: flex;
+      min-height: unset;
+      margin-bottom: 0;
+      padding: 0;
+      background: transparent;
+    }
 
     .main-nav__list {
-      row-gap: 15px;
-      margin: 0;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      margin-bottom: 36px;
     }
 
     .main-nav__item {
-      margin-bottom: 15px;
+      margin-bottom: 0;
+    }
+
+    .btn {
+      padding: 20px;
+      width: 100%;
+    }
+
+    .page-header__img {
+      margin-left: 0;
     }
   }
 }
@@ -35,18 +68,9 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  row-gap: 20px;
-
-  .page-header__img {
-    margin-bottom: 10px;
-  }
 
   @media (max-width: $tablet-width) {
-    row-gap: 15px;
+
   }
 }
 
-.page-footer__polycy {
-  color: $basic-black;
-}

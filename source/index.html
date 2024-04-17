@@ -35,7 +35,7 @@
         </picture>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--shadow"></li>
+
             <li class="main-nav__item"><a href="#course">про проект</a></li>
             <li class="main-nav__item"><a href="#course">для кого</a></li>
             <li class="main-nav__item"><a href="#speakers">спикер</a></li>
@@ -90,11 +90,11 @@
             </button>
             <label class="form__checkbox-label">
               <input class="checkbox" type="checkbox" name="polycy" id="" checked="checked">
-              <a href="?page=conditions">Я принимаю пользовательское соглашение</a>
+              <span>Я принимаю </span><a href="?page=conditions">пользовательское соглашение</a>
             </label>
             <label class="form__checkbox-label">
               <input class="checkbox" type="checkbox" name="terms" id="" checked="checked">
-              <a href="?page=terms">Я согласен с политикой конфиденциальности</a>
+              <span>Я согласен с <a href="?page=terms">политикой конфиденциальности</a></span>
             </label>
             <div class="form_message error inactive"
               style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
@@ -391,11 +391,11 @@
           </button>
           <label class="form__checkbox-label">
             <input class="checkbox" type="checkbox" name="polycy" id="" checked="checked">
-            <a href="?page=conditions">Согласен(а) с <span>пользовательским соглашением</span></a>
+            <span>Я принимаю </span><a href="?page=conditions">пользовательское соглашение</a>
           </label>
           <label class="form__checkbox-label">
             <input class="checkbox" type="checkbox" name="terms" id="" checked="checked">
-            <a href="?page=terms">Я согласен с политикой конфиденциальности</a>
+            <span>Я согласен с <a href="?page=terms">политикой конфиденциальности</a></span>
           </label>
           <div class="form_message error inactive"
             style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
@@ -408,24 +408,22 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <picture>
-        <source type="image/webp" srcset="img/img/logo.webp">
-        <img width="142" height="32" class="page-header__img" src="img/img/logo.png" alt="Логотип .BIG">
+        <source type="image/webp" srcset="img/img/logo-white.webp">
+        <img width="142" height="32" class="page-header__img" src="img/img/logo-white.png" alt="Логотип .BIG">
       </picture>
     </div>
     <div class="page-footer__wrapper">
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--shadow"></li>
           <li class="main-nav__item"><a href="#course">про проект</a></li>
           <li class="main-nav__item"><a href="#course">для кого</a></li>
           <li class="main-nav__item"><a href="#speakers">спикер</a></li>
           <li class="main-nav__item"><a href="#license">программа</a></li>
         </ul>
-        <a class="btn" href="#leadform1">Зарегистрироваться</a>
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__open-btn-text visually-hidden">Mеню</span>
-        </button>
       </nav>
+      <p>Все еще остались вопросы?</p>
+      <p>Зарегистрируйтесь, чтобы наши менеджеры смогли связаться с вами и ответить на все вопросы</p>
+      <a class="btn" href="#leadform1">Зарегистрироваться</a>
     </div>
   </footer>
 
