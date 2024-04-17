@@ -75,6 +75,9 @@ label.error {
 }
 
 .form__checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   accent-color: $basic-white;
 
   &>a {

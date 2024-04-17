@@ -6,10 +6,47 @@
   padding-top: 75px;
   padding-right: 125px;
 
+  &--bottom {
+    padding-left: 190px;
+    background: $bcg-speakers;
+
+    .promo__heading,
+    .promo__star {
+      color: $basic-white;
+    }
+
+    .promo__icon {
+      fill: $basic-white;
+    }
+
+    .promo__sub-heading {
+      font-family: "Philosopher", "Arial", sans-serif;
+
+    }
+
+    .promo__about {
+      font-family: "Piedra", "Arial", sans-serif;
+      text-transform: unset;
+    }
+
+    .form__checkbox-label>a {
+      font-family: "Montserrat", "Arial", sans-serif;
+      font-size: 10px;
+    }
+
+
+  }
+
   @media (max-width: $tablet-width) {
     flex-direction: column;
     gap: 0;
     padding: 0;
+
+    &--bottom {
+      .promo__wrapper--form {
+        padding-top: 30px;
+      }
+    }
   }
 }
 
@@ -48,7 +85,6 @@
 
 .promo__sub-heading {
   margin-bottom: 15px;
-  padding-right: 50px;
   color: $basic-white;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
@@ -115,6 +151,7 @@
 }
 
 .promo__icon {
+  margin-left: 20px;
   min-height: 21px;
   margin-bottom: 24px;
 }

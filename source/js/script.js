@@ -4,16 +4,9 @@ class App {
   init() {
     this.initMobileMenu();
     this.initSlider();
-    this.afterVideoPlay();
     this.onButtonPlay();
     this.isPolicyChecked();
     this.hideText();
-  }
-
-  constructor() {
-    this.iframe = document.querySelector('iframe');
-    this.player = new Vimeo.Player(this.iframe);
-    this.btnPlay = document.querySelector('#button-play')
   }
 
   initMobileMenu() {
@@ -84,24 +77,22 @@ class App {
     })
   }
 
-  afterVideoPlay() {
-    const vidoWrapper = document.querySelector('.promo__video')
-
-    const onPlay = () => {
-      vidoWrapper.style.borderRadius = 'unset';
-      this.btnPlay.style.display = 'none'
-    };
-
-    this.player.on('play', onPlay);
-  }
-
   onButtonPlay() {
-    const playVideo = () => {
-      this.player.play()
-      this.btnPlay.style.display = 'none'
+
+    const videosBlock = document.querySelectorAll('.promo__video')
+
+
+    const playVideo = (block) => {
+      const iframe = block.querySelector('iframe');
+      const player = new Vimeo.Player(iframe);
+      const btnPlay = block.querySelector('#button-play')
+      btnPlay.addEventListener("click",  ()=> {
+        player.play()
+        btnPlay.style.display = 'none'
+      })
     }
 
-    this.btnPlay.addEventListener('click', playVideo);
+    videosBlock.forEach((vb) => { vb.addEventListener('click', playVideo(vb)) })
   }
 
   isPolicyChecked() {
@@ -136,7 +127,7 @@ class App {
       const toggleButton = card.querySelector("#toggleButton")
       const hiddenText = card.querySelector(".hiddenText");
 
-      toggleButton.addEventListener("click", function () {
+      toggleButton.addEventListener("click",  ()=> {
         if (hiddenText.classList.contains("hidden")) {
           toggleButton.classList.remove("hidden");
           hiddenText.classList.remove("hidden");
